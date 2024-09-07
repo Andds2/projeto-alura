@@ -4,12 +4,19 @@
     font-family: "Quicksand", sans-serif;
 }
 
+:root{
+    --bg1: #1c1c1d;
+    --bg2: #28282b;
+    --font: #e4e4e4;
+    --shadow: #131313;
+}
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    background-color: #1c1c1d;
+    background-color: var(--bg1);
 }
 
 main{
@@ -28,30 +35,31 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .title{
-    color: #e4e4e4;
+    color: var(--font);
 }
 
 .btn-iniciar{
     width: 180px;
     height: 30px;
-    background-color: #28282b;
+    background-color: var(--bg2);
     border: none;
-    color: #e4e4e4;
+    color: var(--font);
     border-radius: 10px;
     font-size: 20px;
     margin-top: 10px;
     cursor: pointer;
     transition: all .4s;
-    box-shadow: 0px 0px 10px #131313;
+    box-shadow: 0px 0px 10px var(--shadow);
 }
 
 .btn-iniciar:hover{
-    background-color: #e4e4e4;
-    color: #1c1c1d;
-    box-shadow: 0px 0px 10px #e4e4e4;
+    background-color: var(--font);
+    color: var(--bg1);
+    box-shadow: 0px 0px 10px var(--font);
 }
 
 .content-guess{
@@ -73,15 +81,15 @@ main{
 }
 
 .content-guess-try-count{
-    background-color: #28282b;
+    background-color: var(--bg2);
     padding: 5px 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #131313;
+    box-shadow: 0px 0px 10px var(--shadow);
 }
 
 .content-guess > div h1{
     font-size: 20px;
-    color: #e4e4e4;
+    color: var(--font);
 }
 
 .content-guess > div > div{
@@ -89,13 +97,13 @@ main{
     flex-direction: row;
     align-items: center;
     gap: 5px;
-    border: 1px solid #e4e4e4;
+    border: 1px solid var(--font);
     border-radius: 10px;
 }
 
 .content-guess > div > div > label{
     font-size: 30px;
-    color: #e4e4e4;
+    color: var(--font);
     margin-left: 5px;
 }
 
@@ -108,7 +116,7 @@ main{
     text-align: left;
     border: none;
     background-color: transparent;
-    color: #e4e4e4;
+    color: var(--font);
 }
 
 .content-guess > div > button{
@@ -117,18 +125,18 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #e4e4e4;
+    border: 1px solid var(--font);
     background-color: transparent;
-    color: #e4e4e4;
+    color: var(--font);
     border-radius: 10px;
     cursor: pointer;
     transition: all .4s;
 }
 
 .content-guess > div > button:hover{
-    background-color: #e4e4e4;
-    color: #1c1c1d;
-    box-shadow: 0px 0px 10px #e4e4e4;
+    background-color: var(--font);
+    color: var(--bg1);
+    box-shadow: 0px 0px 10px var(--font);
 }
 
 .content-colors{
@@ -148,7 +156,7 @@ main{
 }
 
 .content-colors > div > h2{
-    color: #e4e4e4;
+    color: var(--font);
 }
 
 .div-color{
@@ -159,7 +167,7 @@ main{
 }
 
 .border{
-    border: 1px solid #e4e4e4;
+    border: 1px solid var(--font);
     width: 200px;
     height: 200px;
     display: flex;
@@ -176,13 +184,13 @@ main{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .result-try{
     width: 300px;
-    height: 55px;
-    border: 1px solid #e4e4e4;
+    height: 50px;
+    border: 1px solid var(--font);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -198,7 +206,8 @@ main{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    background-color: #28282b;
+    background-color: var(--bg2);
+    font-size: 14px;
 }
 
 .f{
@@ -232,8 +241,8 @@ footer{
     user-select: none;
     position: absolute;
     transition: all .6s;
-    color: #e4e4e4;
-    background-color: #1c1c1d;
+    color: var(--font);
+    background-color: var(--bg1);
 }
 
 footer > p{
@@ -242,5 +251,65 @@ footer > p{
 
 footer:hover{
     height: 15vh;
-    box-shadow: 0px 0px 10px #131313;
+    box-shadow: 0px 0px 10px var(--shadow);
+}
+
+menu{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    user-select: none;
+    position: absolute;
+    top: 0;
+}
+
+menu button{
+    margin-left: 20px;
+    border: 2px solid var(--font);
+    color: var(--font);
+    background-color: var(--bg1);
+    padding: 5px;
+    border-radius: 10px;
+    width: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--shadow);
+    transition: all .6s;
+}
+
+menu button:hover{
+    background-color: var(--font);
+    box-shadow: 0px 0px 10px var(--font);
+    color: var(--bg1);
+}
+
+@media screen and (max-width: 1600px){
+    .div-color{
+        width: 130px;
+        height: 130px;
+
+    }
+
+    .border{
+        width: 150px;
+        height: 150px;
+    }
+
+    .content-guess > div h1{
+        font-size: 16px;
+        color: var(--font);
+    }
+
+    .index-result-try{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .result-try{
+        width: 250px;
+        height: 40px;
+    }
 }

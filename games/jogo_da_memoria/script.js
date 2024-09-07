@@ -116,3 +116,7 @@ startButton.addEventListener('click', startTimer);
 const restart = document.getElementById('restart')
 
 restart.addEventListener('click', () => window.location.reload())
+
+const btn_voltar = document.getElementById('btn-voltar').addEventListener('click', () => {
+    window.location.href = "../../index.html"
+})

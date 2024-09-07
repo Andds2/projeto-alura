@@ -167,3 +167,7 @@ const show_result = (color_value, status, status_class) => {
 input_color.addEventListener('input', () => {
     input_color.value = input_color.value.replace(/[^0-9a-fA-F]/g, '');
 });
+
+const btn_voltar = document.getElementById('btn-voltar').addEventListener('click', () => {
+    window.location.href = "../../index.html"
+})

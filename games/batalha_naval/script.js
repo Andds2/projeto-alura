@@ -223,3 +223,7 @@ btn_restart.addEventListener('click', () => restart())
 
 btn_modal.addEventListener('click', () => openModal())
 modalcontent.addEventListener('click', () => closeModal())
+
+const btn_voltar = document.getElementById('btn-voltar').addEventListener('click', () => {
+    window.location.href = "../../index.html"
+})

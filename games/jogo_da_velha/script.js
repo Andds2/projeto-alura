@@ -136,3 +136,7 @@ btns_game.forEach((btn, index) => {
 select_mode.addEventListener('change', () => modojogo = select_mode.value)
 
 iniciar.addEventListener('click', () => inicarJogo())
+
+const btn_voltar = document.getElementById('btn-voltar').addEventListener('click', () => {
+    window.location.href = "../../index.html"
+})
