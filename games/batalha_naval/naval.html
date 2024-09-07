@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Naval :)</title>
+
+    <script src="https://kit.fontawesome.com/679fef9b4a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <h1>COMO JOGAR</h1>
+                <div class="modal-content-text">
+                    <p>O CAMPO 4X4 INFERIOR É O SEU CAMPO</p>
+                    <p>O CAMPO 4X4 SUPERIOR É O CAMPO DO INIMIGO</p>
+                    <h2>INICIANDO O JOGO</h2>
+                    <ol>
+                        <li>No seu campo, selecione 4 lugares para seus navios</li>
+                        <li>Após selecionados, clique no botão "MARCAR" ao lado esquerdo</li>
+                        <li>Após clicado, o jogo dará inicio</li>
+                    </ol>
+                    <h2>ATAQUES e CONTRA-ATAQUES</h2>
+                    <ol>
+                        <li>Você, jogador, será sempre o primerio a atacar</li>
+                        <li>No campo inimigo, basta clicar no lugar onde você acha que esta um navio inimigo</li>
+                        <li>Após você atacar, o computador atacará logo em seguida</li>
+                        <li>Com isso, vocês tem 6 tentativas para derrubar o maximo de navio um do outro</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="game-obj">
+            <p>SEUS NAVIOS</p>
+            <div class="navios">
+                <p id="navio-count"><i class="fa-solid fa-ship"></i></p>
+                <p id="navio-count"><i class="fa-solid fa-ship"></i></p>
+                <p id="navio-count"><i class="fa-solid fa-ship"></i></p>
+                <p id="navio-count"><i class="fa-solid fa-ship"></i></p>
+            </div>
+            <button id="btn-iniciar">MARCAR</button>
+            <button id="btn-restart">REPOSICIONAR</button>
+            <button id="info">?</button>
+        </div>
+        <div class="game">
+            <div class="campo">
+                <div class="row">
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                </div>
+                <div class="row">
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                </div>
+                <div class="row">
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                </div>
+                <div class="row">
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-navios-inimigo"><i class="fa-solid fa-water"></i></button>
+                </div>
+            </div>
+            
+            <div class="divisoria"></div>
+            <div class="campo">
+                <div class="row">
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                </div>
+                <div class="row">
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                </div>
+                <div class="row">
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                </div>
+                <div class="row">
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                    <button class="btn-alvo" id="btn-meus-navios"><i class="fa-solid fa-water"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="placar">
+            <div class="tentativas">
+                <h1>TENTATIVAS RESTANTES:</h1>
+                <h1 id="tentativas">6</h1>
+            </div>
+            <div class="resultado">
+                <h1 id="resultado-game">AGUARDANDO JOGADOR...</h1>
+            </div>
+            <div class="pontos">
+                <div>
+                    <h1>COMPUTADOR: </h1>
+                    <h1 id="com-pontos">0</h1>
+                </div>
+                <div>
+                    <h1>PLAYER: </h1>
+                    <h1 id="ply-pontos">0</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1>Infos</h1>
+        <p>Luis Marcelo de Andrade</p>
+        <p>Projeto desenvolvido para o curso da alura Imersão Dev com Google Gemini</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

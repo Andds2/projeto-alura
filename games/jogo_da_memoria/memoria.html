@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Jogo de Memoria</title>
+
+    <script src="https://kit.fontawesome.com/679fef9b4a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container" id="memory-game">
+            <button class="card-memory" value="1" id="a1"><i class="fa-solid fa-mug-hot"></i></button>
+            <button class="card-memory" value="1.1" id="b1"><i class="fa-solid fa-mug-hot"></i></button>
+            <button class="card-memory" value="2" id="c1"><i class="fa-solid fa-lemon"></i></button>
+            <button class="card-memory" value="2.1" id="d1"><i class="fa-solid fa-lemon"></i></button>
+            <button class="card-memory" value="3" id="e1"><i class="fa-solid fa-pizza-slice"></i></button>
+            <button class="card-memory" value="3.1" id="a2"><i class="fa-solid fa-pizza-slice"></i></button>
+            <button class="card-memory" value="4" id="b2"><i class="fa-solid fa-ice-cream"></i></button>
+            <button class="card-memory" value="4.1" id="c2"><i class="fa-solid fa-ice-cream"></i></button>
+            <button class="card-memory" value="5" id="d2"><i class="fa-solid fa-hotdog"></i></button>
+            <button class="card-memory" value="5.1" id="e2"><i class="fa-solid fa-hotdog"></i></button>
+            <button class="card-memory" value="6" id="a3"><i class="fa-solid fa-burger"></i></button>
+            <button class="card-memory" value="6.1" id="b3"><i class="fa-solid fa-burger"></i></button>
+            <button class="card-memory" value="7" id="c3"><i class="fa-solid fa-pepper-hot"></i></button>
+            <button class="card-memory" value="7.1" id="d3"><i class="fa-solid fa-pepper-hot"></i></button>
+            <button class="card-memory" value="8" id="e3"><i class="fa-solid fa-carrot"></i></button>
+            <button class="card-memory" value="8.1" id="a4"><i class="fa-solid fa-carrot"></i></button>
+            <button class="card-memory" value="9" id="b4"><i class="fa-solid fa-bacon"></i></button>
+            <button class="card-memory" value="9.1" id="c4"><i class="fa-solid fa-bacon"></i></button>
+            <button class="card-memory" value="10" id="d4"><i class="fa-solid fa-apple-whole"></i></button>
+            <button class="card-memory" value="10.1" id="e4"><i class="fa-solid fa-apple-whole"></i></button>
+            <button class="card-memory" value="11" id="a5"><i class="fa-solid fa-cheese"></i></button>
+            <button class="card-memory" value="11.1" id="b5"><i class="fa-solid fa-cheese"></i></button>
+            <button class="card-memory" value="12" id="c5"><i class="fa-solid fa-cake-candles"></i></button>
+            <button class="card-memory" value="12.1" id="d5"><i class="fa-solid fa-cake-candles"></i></button>
+            <button class="card-memory" value="13" id="e5"><i class="fa-solid fa-wine-bottle"></i></button>
+            <button class="card-memory" value="13.1" id="a6"><i class="fa-solid fa-wine-bottle"></i></button>
+            <button class="card-memory" value="14" id="b6"><i class="fa-solid fa-shrimp"></i></button>
+            <button class="card-memory" value="14.1" id="c6"><i class="fa-solid fa-shrimp"></i></button>
+            <button class="card-memory" value="15" id="d6"><i class="fa-solid fa-drumstick-bite"></i></button>
+            <button class="card-memory" value="15.1" id="e6"><i class="fa-solid fa-drumstick-bite"></i></button>
+            <button class="card-memory" value="16" id="f1"><i class="fa-solid fa-cookie"></i></button>
+            <button class="card-memory" value="16.1" id="f2"><i class="fa-solid fa-cookie"></i></button>
+            <button class="card-memory" value="17" id="f3"><i class="fa-solid fa-bread-slice"></i></button>
+            <button class="card-memory" value="17.1" id="f4"><i class="fa-solid fa-bread-slice"></i></button>
+            <button class="card-memory" value="18" id="f5"><i class="fa-solid fa-candy-cane"></i></button>
+            <button class="card-memory" value="18.1" id="f6"><i class="fa-solid fa-candy-cane"></i></button>
+        </div>
+        <div class="btn-container">
+            <div>
+                <button class="btn-time" id="start">Iniciar</button>
+                <button class="btn-restart" id="restart">Reiniciar</button>
+            </div>
+            <h1 class="show-time" id="time">00:00:00</h1>
+            <div class="erros-container">
+                <h1>Erros:</h1>
+                <h1 id="erros">0</h1>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <h1>Infos</h1>
+        <p>Luis Marcelo de Andrade</p>
+        <p>Projeto desenvolvido para o curso da alura Imersão Dev com Google Gemini</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

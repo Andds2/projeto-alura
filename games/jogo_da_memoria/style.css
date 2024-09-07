@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1d;
+}
+
+.container{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-memory{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    background: #282828;
+    border-radius: 5px;
+    border: 2px solid #282828;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    box-shadow: 0px 0px 5px #111111;
+}
+
+.card-memory > i{
+    display: none;
+    transform: rotateY(180deg);
+    color: #e4e4e4;
+    font-size: 40px;
+}
+
+.card-memory:hover{
+    border: 2px solid #e4e4e4;
+}
+
+.selected{
+    border: 2px solid #e4e4e4;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+}
+
+.selected > i{
+    display: block;
+}
+
+.correct{
+    border: 2px solid #7bf1a8;
+    border-radius: 10px;
+    cursor:default;
+    transform: rotateY(180deg);
+}
+
+.correct:hover{
+    border: 2px solid #7bf1a8;
+    border-radius: 10px;
+}
+
+.correct > i{
+    display: block;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-time{
+    font-size: large;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #7bf1a8;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #7bf1a8;
+    transition: all .7s;
+    font-weight: 600;
+}
+
+.btn-time:hover{
+    background-color: #7bf1a8;
+    color: #1c1c1d;
+}
+
+.btn-restart{
+    font-size: large;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #ffd670;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffd670;
+    transition: all .7s;
+    font-weight: 600;
+}
+
+.btn-restart:hover{
+    background-color: #ffd670;
+    color: #1c1c1d;
+}
+
+.show-time{
+    color: #fff;
+}
+
+.erros-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.erros-container > h1{
+    font-size: larger;
+    color: #a33d3f;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: #1c1c1d;
+}
+
+footer{
+    width: 100%;
+    height: 5vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    user-select: none;
+    position: absolute;
+    transition: all .6s;
+    color: #e4e4e4;
+    background-color: #1c1c1d;
+}
+
+footer > p{
+    margin-top: 20px;
+}
+
+footer:hover{
+    height: 15vh;
+    box-shadow: 0px 0px 10px #131313;
+}
+
+@media screen and (max-width: 1600px){
+    .card-memory{
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 1366px) {
+    .card-memory{
+        width: 80px;
+        height: 80px;
+    }
+
+    footer:hover{
+        height: 20vh;
+        box-shadow: 0px 0px 10px #131313;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card-memory{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-container{
+        margin-bottom: 10px;
+        gap: 5px;
+    }
+
+    .btn-restart, .btn-time{
+        width: 70px;
+        height: 30px;
+        font-size: small;
+    }
+
+    .show-time{
+        font-size: medium;
+    }
+
+    .erros-container > h1{
+        font-size: medium;
+    }
+}

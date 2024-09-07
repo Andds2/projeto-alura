@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe a cor :)</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <main>
+        <div class="content-select">
+            <h1 class="title">Pronto pra jogar?</h1>
+            <button class="btn-iniciar" id="btn-start">Iniciar</button>
+        </div>
+        <div class="content-guess">
+            <div class="content-guess-try-count">
+                <h1>Tentativas: </h1>
+                <h1 id="show-try">5</h1>
+                <h1>de 5</h1>
+            </div>
+            <div>
+                <div>
+                    <label for="">#</label>
+                    <input type="text" id="input-color" maxlength="6" pattern="[0-9a-fA-F]+">
+                </div>
+                <button id="button-color"><span class="material-symbols-outlined">check</span></button>
+            </div>
+        </div>
+        <div class="content-colors">
+            <div>
+                <h2>Cor</h2>
+                <div class="border">
+    
+                    <div class="div-color" id="div-color"></div>
+                </div>
+            </div>
+            <div>
+                <h2>Seu Palpite</h2>
+                <div class="border">
+                    <div class="div-color" id="div-color-guess"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content-try" id="content-try">
+            
+        </div>
+    </main>
+    <footer>
+        <h1>Infos</h1>
+        <p>Luis Marcelo de Andrade</p>
+        <p>Projeto desenvolvido para o curso da alura Imersão Dev com Google Gemini</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

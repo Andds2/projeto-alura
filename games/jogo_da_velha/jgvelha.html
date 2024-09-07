@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha :)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="mode">
+            <h1>Modo de Jogo:</h1>
+            <select name="mode-select" id="mode-select">
+                <option value="" selected disabled>Selecione...</option>
+                <option value="pvc">P vs C</option>
+                <option value="pvp">P vs P</option>
+            </select>
+            <button id="iniciar">Jogar</button>
+        </div>
+        <div class="sobre-game">
+            <div class="vez-jogador">
+                <h1>VEZ DO JOGADOR</h1>
+                <h2 id="jogador">X</h2>
+            </div>
+            <div class="status">
+                <h1 id="status-game">AGUARDANDO JOGADOR</h1>
+            </div>
+        </div>
+        <div class="content-game">
+            <div class="row">
+                <button class="btn-game" id="btn-game"></button>
+                <button class="btn-game" id="btn-game"></button>
+                <button class="btn-game" id="btn-game"></button>
+            </div>
+            <div class="row">
+                <button class="btn-game" id="btn-game"></button>
+                <button class="btn-game" id="btn-game"></button>
+                <button class="btn-game" id="btn-game"></button>
+            </div>
+            <div class="row">
+                <button class="btn-game" id="btn-game"></button>
+                <button class="btn-game" id="btn-game"></button>
+                <button class="btn-game" id="btn-game"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1>Infos</h1>
+        <p>Luis Marcelo de Andrade</p>
+        <p>Projeto desenvolvido para o curso da alura Imersão Dev com Google Gemini</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
